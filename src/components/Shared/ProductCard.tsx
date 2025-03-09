@@ -25,7 +25,7 @@ interface Props {
   className?: string;
   characteristics: {
     keys: number; // Количество клавиш
-    material: string; // Материал корпуса
+    bodyMaterial: string; // Материал корпуса
     dimensions: string; // Размеры
     weight: string; // Вес
     color: string; // Цвет
@@ -34,7 +34,6 @@ interface Props {
 
 export const ProductCart: React.FC<Props> = ({
   className,
-  id,
   imgUrl,
   PianoName,
   StrikethroughPrice,
@@ -90,7 +89,7 @@ export const ProductCart: React.FC<Props> = ({
               </p>
               <p>
                 <span className="font-medium">Материал корпуса:</span>{" "}
-                {characteristics.material}
+                {characteristics.bodyMaterial}
               </p>
               <p>
                 <span className="font-medium">Размеры:</span>{" "}

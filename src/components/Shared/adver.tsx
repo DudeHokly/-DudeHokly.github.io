@@ -1,5 +1,5 @@
 import React from "react";
-import { Accessibility, Cat, Cigarette, Ear, FileMusic } from "lucide-react";
+import { Cat, Cigarette, Ear } from "lucide-react";
 
 import { Title } from "./title";
 import { LilComp } from "./lilComp";

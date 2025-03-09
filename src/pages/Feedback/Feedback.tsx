@@ -1,29 +1,7 @@
 import { Title } from "@/components/Shared";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-
-import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
-import {
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from "@/components/ui/form";
-
-const loginSchema = z.object({
-  email: z.string().email("Некорректный email"),
-  password: z.string().min(6, "Пароль должен содержать минимум 6 символов"),
-});
 
 const Feedback = () => {
-  const form = useForm({
-    resolver: zodResolver(loginSchema),
-    defaultValues: {
-      email: "",
-      password: "",
-    },
-  });
   return (
     <section className="pt-[80px]">
       <div className="p-[40px] shadow-2xl rounded-3xl w-[1200px] mb-[50px] m-auto">

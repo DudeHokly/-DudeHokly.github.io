@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
-import { z } from "zod";
 
 // Тип данных товара
 type CartItem = {
@@ -18,16 +17,6 @@ const initialCart: CartItem[] = [
   { id: 2, name: "Товар 2", price: 1500, quantity: 2 },
   { id: 3, name: "Товар 3", price: 2000, quantity: 1 },
 ];
-
-// Схемы валидации
-const orderSchema = z.object({
-  email: z.string().email("Некорректный email"),
-  address: z.string().min(10, "Введите корректный адрес"),
-});
-
-const shippingSchema = z.object({
-  trackingNumber: z.string().min(6, "Введите номер отслеживания"),
-});
 
 const ShopingCarting: React.FC = () => {
   const [isOrder, setIsOrder] = useState(true);

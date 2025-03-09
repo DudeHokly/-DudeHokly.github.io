@@ -3,13 +3,13 @@ import { DecorateElem, NewsLenta } from "@/components/Shared";
 import { AdverComp } from "@/components/Shared/adver";
 import CarouselComp from "@/components/Shared/Carousel";
 import { Button } from "@/components/ui/button";
-import { Accessibility, BicepsFlexed, FileMusic, Sparkles } from "lucide-react";
+import { BicepsFlexed, FileMusic, Sparkles } from "lucide-react";
 import { Link } from "react-router";
 
 interface DecorItem {
   title: string;
   textBelow: string;
-  icon?: string;
+  icon?: JSX.Element;
 }
 
 const Home: React.FC = () => {

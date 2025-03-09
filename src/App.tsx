@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Container, Footer, Header } from "@/components/Shared";
 
 import ItemsPage from "./pages/ItemsPage/ItemsPage";

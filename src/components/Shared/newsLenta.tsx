@@ -25,8 +25,6 @@ interface Props {
 }
 
 export const NewsLenta: React.FC<Props> = ({ className, news }) => {
-  const [open, setOpen] = useState(false);
-
   const scrollRef = useRef<HTMLDivElement>(null);
   const scrollAnimationRef = useRef<number | null>(null);
 
