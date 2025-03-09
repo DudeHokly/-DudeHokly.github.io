@@ -8,6 +8,7 @@ export default defineConfig({
   base: "/",
   plugins: [react(), tailwindcss()],
   build: {
+    outDir: "dist",
     chunkSizeWarningLimit: 1000, // Увеличиваем лимит до 1000 кБ (1 МБ)
   },
   resolve: {
