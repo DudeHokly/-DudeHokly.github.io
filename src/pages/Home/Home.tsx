@@ -9,7 +9,7 @@ import { Link } from "react-router";
 interface DecorItem {
   title: string;
   textBelow: string;
-  icon?: JSX.Element;
+  icon?: React.ReactNode;
 }
 
 const Home: React.FC = () => {

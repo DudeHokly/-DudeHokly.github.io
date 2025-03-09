@@ -1,12 +1,10 @@
 import React from "react";
-
 import { Title } from "./title";
-import { Accessibility } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 interface Props {
   className?: string;
-  icon?: string;
+  icon?: React.ReactNode;
   title: string;
   textBelow: string;
 }
